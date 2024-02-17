@@ -176,37 +176,33 @@ div img
 
 
 /*evolucoes*/
-.evolucao .box-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
-    gap: 1.5rem;
+
+
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    padding: 10rem;
+    flex-wrap: wrap; /* Permite que os itens sejam quebrados em várias linhas */
 }
 
-.evolucao .box-container .box {
-    height: 40rem;
-    overflow: hidden;
-    position: relative;
-}
-.evolucao .box-container .box:hover .content {
-    transform: translateY(0);
+.card {
+    margin: 0 0.5em;
+    /* box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18); */
+    border: none;
+    border-radius: 0;
+    background: none;
+    max-width: 300px; 
 }
 
-.evolucao .box-container .box img {
-    height: 100%;
+.card-img-top {
     width: 100%;
-    object-fit: cover;
-}
-
-
-.evolucao .box-container .box .content span {
-    font-size: 1.5rem;
-    color: rgb(5, 238, 21);
-}
-
-.evolucao .box-container .box .content h3 {
-    font-size: 2rem; 
-    color: #fff;
-    padding-top: .5rem;
+    border-radius: 5px;
+    height: auto; 
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px rgb(1, 108, 15);
+    transition: all 0.3s;
+    background-color: #326b01;
 }
 
 /*atletas*/
@@ -220,7 +216,7 @@ div img
 
 .card {
     margin: 0 0.5em;
-    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    /* box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18); */
     border: none;
     border-radius: 0;
     background: none;
@@ -307,13 +303,15 @@ div img
     }
 
     .card-img-top {
-        max-width: 60rem; 
+        max-width: 100%; 
         max-height: 300px;
     }
     .card {
         height: 100%;
         margin-bottom: 2rem; 
     }
+
+    
 }
 
 /* Responsividade para telas ainda menores */
@@ -326,6 +324,21 @@ div img
         max-width: 300px; 
         max-height: 300px;
     }
-}
 
+    .card {
+        margin: 0 0.5em;
+        /* box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18); */
+        border: none;
+        border-radius: 0;
+        background: none;
+        max-width: 300px; 
+    }
+
+
+    .evo{
+        width: 200px;
+        height: 200px;
+        margin-left: -2.5em;
+    }
+}
 
