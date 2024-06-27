@@ -78,8 +78,13 @@ section {
 }
 
 .banner{
-    height: 45em;
-    width:50em ;
+    height: 60%;
+    width:100% ;
+    display: flex;
+    justify-content: center;
+}
+
+.responsivo{
     display: flex;
     justify-content: center;
 }
