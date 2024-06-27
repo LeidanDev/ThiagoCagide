@@ -53,17 +53,8 @@ section {
 .text-capa{
     color: rgb(255, 255, 255);
     font-size: 2rem;
-    margin-top: 300px;
+    margin-top: 200px;
 }
-
-.teste{
-    color: #000000;
-    padding-top: 8em;
-    
-    
-}
-
-
 
 /*capa*/ 
 .carousel-caption {
@@ -72,26 +63,9 @@ section {
     right: 0;
     bottom: 0;
     top:0;
-    /* background: rgba(147, 147, 147, 0.427); */
+    background: rgba(147, 147, 147, 0.427);
     z-index: 1;
-    padding-top: 15em;
-}
 
-.banner{
-    height: 60%;
-    width:100% ;
-    display: flex;
-    justify-content: center;
-}
-
-.responsivo{
-    display: flex;
-    justify-content: center;
-}
-
-.txtP{
-    font-size: 5em;
-    color: #000;
 }
 
 .heading {
@@ -204,10 +178,6 @@ div img
 
 /*evolucoes*/
 
-.evolucao{
-    display: flex;
-    justify-content: center;
-}
 
 .cards-wrapper {
     display: flex;
@@ -234,20 +204,6 @@ div img
     box-shadow: 5px 5px 15px rgb(1, 108, 15);
     transition: all 0.3s;
     background-color: #326b01;
-}
-
-.tituloG{
-    color: #000; 
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 5rem;
-    font-weight: 900; 
-    padding-top: 1em;
-    text-align: center;
-    text-decoration: none;
-}
-
-.tituloG:hover{
-    color: #326b01;
 }
 
 /*atletas*/
@@ -279,19 +235,17 @@ div img
 }
 
 
-
 /*localizacao*/
 
 .localizacao {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 3.8rem;
-    
+    gap: 5rem;
 }
 
 .localizacao .content {
-    flex: 1 1 5rem;
+    flex: 1 1 40rem;
 }
 .localizacao .content span {
     font-size: 2rem;
@@ -313,7 +267,7 @@ div img
 
 .localizacao .mapa {
     flex: 1 1 4rem;
-    
+    position: relative;
 }
 
 /* Tamanho padrão do mapa */
