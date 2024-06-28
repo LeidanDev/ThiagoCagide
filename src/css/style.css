@@ -14,16 +14,16 @@ html {
     scroll-padding-top: 5rem;
     overflow-x: hidden;
 
-    
+
 }
 
-body{
-    background: linear-gradient(353deg, rgba(136,163,117,100) 0%,  rgba(185,230,149,1)100%);
-    
+body {
+    background: linear-gradient(353deg, rgba(136, 163, 117, 100) 0%, rgba(185, 230, 149, 1)100%);
+
 }
 
 section {
-    padding:  5rem 9%;
+    padding: 5rem 9%;
 }
 
 /*navbar*/
@@ -35,37 +35,75 @@ section {
 
 }
 
-#navbar{
-    background: linear-gradient(360deg,  #87926f 5%,  #7aaf08 100%);
+#navbar {
+    background: linear-gradient(360deg, #87926f 5%, #7aaf08 100%);
 }
 
-#logo{
+#logo {
     width: 60px;
     height: 60px;
 }
 
 .icones {
     width: 20px;
-    margin :  .9rem;
+    margin: .9rem;
 
 }
 
-.text-capa{
+.text-capa {
     color: rgb(255, 255, 255);
     font-size: 2rem;
-    margin-top: 200px;
+    margin-top: 300px;
 }
 
-/*capa*/ 
+.teste {
+    color: #000000;
+    padding-top: 8em;
+
+
+}
+
+
+
+/*capa*/
 .carousel-caption {
- 
+
     left: 0;
     right: 0;
     bottom: 0;
-    top:0;
-    background: rgba(147, 147, 147, 0.427);
+    top: 0;
+    /* background: rgba(147, 147, 147, 0.427); */
     z-index: 1;
+    padding-top: 15em;
+}
 
+.caixa {
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.imgCapa {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    margin-left: 33%;
+    padding-bottom: 20em;
+}
+
+.textoCapa {
+    padding-top: 15em;
+}
+
+.responsivo {
+    display: flex;
+    justify-content: center;
+}
+
+.txtP {
+    font-size: 5em;
+    color: #000;
 }
 
 .heading {
@@ -73,6 +111,7 @@ section {
     margin-bottom: rem;
     position: relative;
 }
+
 .heading::before {
     content: '';
     position: absolute;
@@ -84,6 +123,7 @@ section {
     background: #8c8c8c;
     z-index: -1;
 }
+
 .heading span {
     font-size: 3rem;
     color: rgb(8, 9, 8);
@@ -117,6 +157,7 @@ section {
     flex: 1 1 6rem;
     position: relative;
 }
+
 .about .image::before,
 .about .image::after {
     content: '';
@@ -126,6 +167,7 @@ section {
     height: 15rem;
     width: 15rem;
 }
+
 .about .image::before {
     top: 0;
     left: 0;
@@ -135,6 +177,7 @@ section {
     bottom: 0;
     right: 0;
 }
+
 .about .image img {
     width: 100%;
     padding: 2rem;
@@ -143,6 +186,7 @@ section {
 .about .content {
     flex: 1 1 42rem;
 }
+
 .about .content span {
     font-size: 3rem;
     color: rgb(0, 0, 0);
@@ -153,6 +197,7 @@ section {
     color: #fff;
     margin-top: .5rem;
 }
+
 .about .content p {
     font-size: 2rem;
     color: #000000;
@@ -161,30 +206,35 @@ section {
     text-align: justify;
 }
 
-.img-fluid{
+.img-fluid {
     height: 40rem;
     border-radius: 4px;
     border: solid 2px blue;
 }
-div img
-{
+
+div img {
     width: 250px;
     border-radius: 5px;
     gap: 20px;
 
-    
+
 }
 
 
 /*evolucoes*/
 
+.evolucao {
+    display: flex;
+    justify-content: center;
+}
 
 .cards-wrapper {
     display: flex;
     justify-content: center;
     gap: 5rem;
     padding: 10rem;
-    flex-wrap: wrap; /* Permite que os itens sejam quebrados em várias linhas */
+    flex-wrap: wrap;
+    /* Permite que os itens sejam quebrados em várias linhas */
 }
 
 .card {
@@ -193,17 +243,31 @@ div img
     border: none;
     border-radius: 0;
     background: none;
-    max-width: 300px; 
+    max-width: 300px;
 }
 
 .card-img-top {
     width: 100%;
     border-radius: 5px;
-    height: auto; 
+    height: auto;
     border-radius: 5px;
     box-shadow: 5px 5px 15px rgb(1, 108, 15);
     transition: all 0.3s;
     background-color: #326b01;
+}
+
+.tituloG {
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5rem;
+    font-weight: 900;
+    padding-top: 1em;
+    text-align: center;
+    text-decoration: none;
+}
+
+.tituloG:hover {
+    color: #326b01;
 }
 
 /*atletas*/
@@ -212,7 +276,8 @@ div img
     justify-content: center;
     gap: 5rem;
     padding: 10rem;
-    flex-wrap: wrap; /* Permite que os itens sejam quebrados em várias linhas */
+    flex-wrap: wrap;
+    /* Permite que os itens sejam quebrados em várias linhas */
 }
 
 .card {
@@ -221,18 +286,19 @@ div img
     border: none;
     border-radius: 0;
     background: none;
-    max-width: 300px; 
+    max-width: 300px;
 }
 
 .card-img-top {
     width: 100%;
     border-radius: 5px;
-    height: auto; 
+    height: auto;
     border-radius: 5px;
     box-shadow: 5px 5px 15px rgb(1, 108, 15);
     transition: all 0.3s;
     background-color: #326b01;
 }
+
 
 
 /*localizacao*/
@@ -241,12 +307,14 @@ div img
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 5rem;
+    gap: 3.8rem;
+
 }
 
 .localizacao .content {
-    flex: 1 1 40rem;
+    flex: 1 1 5rem;
 }
+
 .localizacao .content span {
     font-size: 2rem;
     color: rgb(40, 34, 34);
@@ -257,22 +325,23 @@ div img
     color: #fff;
     margin-top: .5rem;
 }
+
 .localizacao .content p {
     font-size: 2rem;
     color: #000000;
     padding: 1rem 0;
     line-height: 2;
-    
+
 }
 
 .localizacao .mapa {
     flex: 1 1 4rem;
-    position: relative;
+
 }
 
 /* Tamanho padrão do mapa */
 .localizacao .mapa {
-    flex: 1 1 4rem; 
+    flex: 1 1 4rem;
     position: relative;
 }
 
@@ -298,31 +367,61 @@ div img
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
     .localizacao .mapa {
-        flex: 1 1 3rem; 
+        flex: 1 1 3rem;
         justify-content: center;
         margin: 2rem 5rem 0 0;
     }
 
     .card-img-top {
-        max-width: 100%; 
+        max-width: 100%;
         max-height: 300px;
     }
+
     .card {
         height: 100%;
-        margin-bottom: 2rem; 
+        margin-bottom: 2rem;
+    }
+
+    .caixa{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .imgCapa {
+        
+        display: flex;
+        justify-content: center;
+        /* margin-left: 33%; */
+        
+    }
+
+    .txttitulo {
+        font-size: 26px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        /* width: 80%; */
+        /* padding-left: 5em; */
+    }
+    
+    .textoM{
+        padding-bottom: 35em;
+        font-size: 5px;
     }
 
     
+
 }
 
 /* Responsividade para telas ainda menores */
 @media (max-width: 576px) {
     .localizacao .mapa {
-        flex: 1 1 2rem; 
+        flex: 1 1 2rem;
     }
 
     .card-img-top {
-        max-width: 300px; 
+        max-width: 300px;
         max-height: 300px;
     }
 
@@ -332,14 +431,41 @@ div img
         border: none;
         border-radius: 0;
         background: none;
-        max-width: 300px; 
+        max-width: 300px;
     }
 
+    .caixa{
+    
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .imgCapa {
+        
+        display: flex;
+        justify-content: center;
+        margin-left: 33%;
+        
+    }
 
-    .evo{
+    .txttitulo {
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 80%;
+        padding-left: 5em;
+    }
+    
+    .textoM{
+        padding-bottom: 60em;
+        font-size: 5px;
+    }
+    
+    .evo {
         width: 200px;
         height: 200px;
         margin-left: -2.5em;
     }
 }
-
