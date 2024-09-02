@@ -19,7 +19,7 @@ html {
 
 body {
     background: linear-gradient(353deg, rgba(136, 163, 117, 100) 0%, rgba(185, 230, 149, 1)100%);
-
+    
 }
 
 section {
@@ -366,6 +366,11 @@ div img {
 
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
+
+    body{
+        overflow-x: hidden;
+    }
+
     .localizacao .mapa {
         flex: 1 1 3rem;
         justify-content: center;
@@ -410,12 +415,16 @@ div img {
         font-size: 5px;
     }
 
-
+    
 
 }
 
 /* Responsividade para telas ainda menores */
 @media screen and (max-width: 576px) {
+
+    body{
+        overflow-x: hidden;
+    }
     .about{
         display: flex;
         align-items: center;
